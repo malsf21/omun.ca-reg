@@ -8,7 +8,7 @@
 
 	// Build query
 	$query = "
-		INSERT INTO  `wac`.`students` (
+		INSERT INTO  `omun`.`students` (
 			`id` ,
 			`name` ,
 			`school` ,

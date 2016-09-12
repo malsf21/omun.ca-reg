@@ -5,7 +5,7 @@
 	$school = $_SESSION['school'];
 
 	// Build query
-	$query = "DELETE FROM wac.schools WHERE schools.school='$school';";
+	$query = "DELETE FROM omun.schools WHERE schools.school='$school';";
 
 	// execute query
 	$result = mysql_query($query) or die ("Error in query: ".mysql_error());

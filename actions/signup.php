@@ -27,7 +27,7 @@
 	// "Tom, shut up and write the damn signup function"
 	// "OK Chuck"
 	$query = "
-	INSERT INTO  `wac`.`schools` (`id`, `school`, `email`, `password`, `salt`, `payment`) 
+	INSERT INTO  `omun`.`schools` (`id`, `school`, `email`, `password`, `salt`, `payment`) 
 	VALUES (NULL,
 		'$school',
 		'$email',

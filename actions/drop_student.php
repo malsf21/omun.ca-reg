@@ -4,7 +4,7 @@
 	$name = $_POST['name']; //SANITIZE
 
 	// Build query
-	$query = "DELETE FROM wac.students WHERE students.name='$name' AND students.school='$_SESSION[school]';";
+	$query = "DELETE FROM omun.students WHERE students.name='$name' AND students.school='$_SESSION[school]';";
 
 	// execute query
 	$result = mysql_query($query) or die ("Error in query: ".mysql_error());

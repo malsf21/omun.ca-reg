@@ -5,7 +5,7 @@
 	$password = $_POST['password']; //SANITIZE
 
 	// Build query
-	$query = "SELECT * FROM wac.schools WHERE email='$email';";
+	$query = "SELECT * FROM omun.schools WHERE email='$email';";
 
 	// execute query
 	$result = mysql_query($query) or die ("Error in query:".mysql_error());
