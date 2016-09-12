@@ -1,7 +1,7 @@
 <?php
   require './common.php';
 
-  if (!$_SESSION['school']) {
+  if (empty($_SESSION['school'])) {
     header('Location: index.php');
     die('Redirecting to: index.php');
   }
