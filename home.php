@@ -7,7 +7,7 @@
   }
 
   // Make query
-  $query = "SELECT COUNT(*) FROM omun.students WHERE school=". $_SESSION["school"].";";
+  $query = "SELECT COUNT(*) FROM omun.students WHERE school='$_SESSION[school]';";
   // execute query
   $count = mysql_query($query) or die ("Error in query:".mysql_error());
   $count = mysql_fetch_array($count)[0];
