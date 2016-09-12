@@ -1,0 +1,18 @@
+/* | Removes sideways scrollbar, and always has a full background. | */
+html{
+	position: relative;
+  min-width: 100%;
+  min-height: 100%;
+	overflow-x: hidden;
+}
+
+/* | Sets default font to Nexa | */
+body{
+	min-width: 100%;
+  min-height: 100%;
+}
+
+/* | Gives site containers top-padding | */
+.container-main{
+	padding-top:20px;
+}
