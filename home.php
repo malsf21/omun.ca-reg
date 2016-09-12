@@ -65,7 +65,19 @@
           <div class="well">
             <h1><?php echo $_SESSION["school"] ?> Home</h1>
             <h2><b><?php echo $count ?></b> Registered Delegates</h2>
-            <h2>Payment <span class="text-danger"><?php echo $_SESSION["payment"] ?></span></h2>
+            <h2>Payment
+              <?php
+                if ($_SESSION["payment"] == 0){
+                  echo "<span class=\"text-danger\">Not Received</span>";
+                }
+                else if ($_SESSION["payment"] == 1){
+                  echo "<span class=\"text-success\">Received</span>";
+                }
+                else{
+                  echo "<span class=\"text-warning\">Pending</span>";
+                }
+              ?>
+            </h2>
           </div>
         </div>
       </div>
