@@ -42,10 +42,10 @@
 					<div class="col-sm-3">
 						<ul class="nav nav-pills nav-stacked">
 						  <li class="nav-item">
-						    <a class="nav-link active" data-toggle="tab" href="#signup" role="tab">Signup</a>
+						    <a class="nav-link" data-toggle="tab" href="#signup" role="tab">Signup</a>
 						  </li>
 						  <li class="nav-item">
-						    <a class="nav-link" data-toggle="tab" href="#login" role="tab">Login</a>
+						    <a class="nav-link active" data-toggle="tab" href="#login" role="tab">Login</a>
 						</ul>
 						<p>
 							Registration is for <b>schools attending OMUN</b>, not individual delegates. If you're an individual delegate looking to attend OMUN, please contact us for further details.
@@ -53,7 +53,7 @@
 					</div>
 					<div class="col-sm-9">
 						<div class="tab-content">
-							<div class="tab-pane active" id="signup" role="tabpanel">
+							<div class="tab-pane" id="signup" role="tabpanel">
 								<form action="actions/signup.php" method="post">
 									<h3>Signup</h3>
 									<label>School: </label><input class="form-control" required type="text" name="school"><br>
@@ -63,7 +63,7 @@
 									<button class="btn btn-success" role="submit">Signup</button>
 								</form>
 							</div>
-							<div class="tab-pane" id="login" role="tabpanel">
+							<div class="tab-pane active" id="login" role="tabpanel">
 								<form action="actions/signin.php" method="post">
 									<h3>Login</h3>
 									<label>Email: </label><input class="form-control" required type="email" name="email"><br>
