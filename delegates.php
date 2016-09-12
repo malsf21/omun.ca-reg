@@ -59,7 +59,6 @@
 								<input class="form-control" required type="number" name="grade" id="grade">
 							</div>
 							<fieldset class="form-group">
-						    <legend>Sex</legend>
 						    <div class="form-check">
 						      <label class="form-check-inline">
 						        <input type="radio" class="form-check-input" name="sex" id="sexRadioM" value="Male" checked>
@@ -73,6 +72,10 @@
 						      </label>
 						    </div>
 						  </fieldset>
+              <div class="form-group">
+                <label for="access">Dietary Restrictions </label>
+                <input class="form-control" type="text" name="dietary" id="dietary">
+              </div>
 							<button class="btn btn-success" role="submit"><span class="fa fa-user-plus"></span> Add Delegate</button>
 						</form>
 					</div>
@@ -83,6 +86,7 @@
     				      <th>Name</th>
     				      <th>Grade</th>
     				      <th>Sex</th>
+                  <th>Dietary Restrictions</th>
     				      <th>Assigned Committee</th>
     							<th>Actions</th>
     				    </tr>
@@ -103,6 +107,7 @@
     								echo "<td class='table-cell'>" . $row["name"] . "</td>";
     								echo "<td class='table-cell'>" . $row["grade"] . "</td>";
     								echo "<td class='table-cell'>" . $row["sex"] . "</td>";
+                    echo "<td class='table-cell'>" . $row["dietary"] . "</td>";
     								echo "<td class='table-cell'>" . $row["assignment"] . "</td>";
     								echo "<td class='table-cell'><form action='actions/drop_student.php' method='post'><button class='btn btn-danger' name='name' value='$row[name]'><span class='fa fa-remove'></span> Remove Delegate</button></form></td>";
     							echo "</tr>";

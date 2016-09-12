@@ -4,7 +4,8 @@
 	$name   = $_POST['name']; //SANITIZE
 	$grade  = $_POST['grade']; //SANITIZE
 	$sex    = $_POST['sex']; //SANITIZE
-	$access = "unassigned";
+	$dietary    = $_POST['dietary']; //SANITIZE
+	$assignment = "unassigned";
 
 	// Build query
 	$query = "
@@ -14,11 +15,12 @@
 			`school` ,
 			`grade` ,
 			`sex` ,
+			`dietary` ,
 			`assignment`
 		)
 
 		VALUES (
-			NULL ,  '$name',  '$_SESSION[school]',  '$grade',  '$sex',  '$access'
+			NULL ,  '$name',  '$_SESSION[school]',  '$grade',  '$sex', '$dietary', '$assignment'
 		);";
 
 	// execute query
