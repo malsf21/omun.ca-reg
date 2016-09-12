@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS `schools` (
   `email` text NOT NULL,
   `password` text NOT NULL,
   `salt` text NOT NULL,
+  `payment` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
@@ -25,7 +26,6 @@ CREATE TABLE IF NOT EXISTS `students` (
   `grade` text NOT NULL,
   `sex` text NOT NULL,
   `assignment` text NOT NULL,
-  `payment` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
