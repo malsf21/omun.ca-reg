@@ -76,45 +76,45 @@
 							<button class="btn btn-success" role="submit"><span class="fa fa-user-plus"></span> Add Delegate</button>
 						</form>
 					</div>
-				</div>
-  			<div class="well">
-  				<table class="table">
-  					<thead class="thead-inverse">
-  				    <tr>
-  				      <th>Name</th>
-  				      <th>Grade</th>
-  				      <th>Sex</th>
-  				      <th>Assigned Committee</th>
-  							<th>Actions</th>
-  				    </tr>
-  				  </thead>
-  					<tbody>
-  					<?php
+    			<div class="well">
+    				<table class="table">
+    					<thead class="thead-inverse">
+    				    <tr>
+    				      <th>Name</th>
+    				      <th>Grade</th>
+    				      <th>Sex</th>
+    				      <th>Assigned Committee</th>
+    							<th>Actions</th>
+    				    </tr>
+    				  </thead>
+    					<tbody>
+    					<?php
 
-  						// Make query
-  						$query = "SELECT * FROM omun.students WHERE school='$_SESSION[school]';";
+    						// Make query
+    						$query = "SELECT * FROM omun.students WHERE school='$_SESSION[school]';";
 
-  						// execute query
-  						$result = mysql_query($query) or die ("Error in query:".mysql_error());
+    						// execute query
+    						$result = mysql_query($query) or die ("Error in query:".mysql_error());
 
-              $count = 0;
-  						// For every row
-  						while ($row = mysql_fetch_array($result)) {
-  							echo "<tr class='table-row'>";
-  								echo "<td class='table-cell'>" . $row["name"] . "</td>";
-  								echo "<td class='table-cell'>" . $row["grade"] . "</td>";
-  								echo "<td class='table-cell'>" . $row["sex"] . "</td>";
-  								echo "<td class='table-cell'>" . $row["assignment"] . "</td>";
-  								echo "<td class='table-cell'><form action='actions/drop_student.php' method='post'><button class='btn btn-danger' name='name' value='$row[name]'><span class='fa fa-remove'></span> Remove Delegate</button></form></td>";
-  							echo "</tr>";
-                $count += 1;
-  						}
-  					?>
-  					</tbody>
-  				</table>
-          <span class="text-xs-right"><?php echo $count;?> registered delegates</span>
-  			</div>
-  		</div>
+                $count = 0;
+    						// For every row
+    						while ($row = mysql_fetch_array($result)) {
+    							echo "<tr class='table-row'>";
+    								echo "<td class='table-cell'>" . $row["name"] . "</td>";
+    								echo "<td class='table-cell'>" . $row["grade"] . "</td>";
+    								echo "<td class='table-cell'>" . $row["sex"] . "</td>";
+    								echo "<td class='table-cell'>" . $row["assignment"] . "</td>";
+    								echo "<td class='table-cell'><form action='actions/drop_student.php' method='post'><button class='btn btn-danger' name='name' value='$row[name]'><span class='fa fa-remove'></span> Remove Delegate</button></form></td>";
+    							echo "</tr>";
+                  $count += 1;
+    						}
+    					?>
+    					</tbody>
+    				</table>
+            <span class="text-xs-right"><?php echo $count;?> registered delegates</span>
+    			</div>
+    		</div>
+      </div>
     </div>
   </body>
 </html>
