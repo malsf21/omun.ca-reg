@@ -19,7 +19,7 @@
 
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
 
     <link rel="stylesheet" href="css/font-awesome.min.css" />
