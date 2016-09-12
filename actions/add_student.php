@@ -4,7 +4,7 @@
 	$name   = $_POST['name']; //SANITIZE
 	$grade  = $_POST['grade']; //SANITIZE
 	$sex    = $_POST['sex']; //SANITIZE
-	$access = "unassigned"
+	$access = "unassigned";
 
 	// Build query
 	$query = "
