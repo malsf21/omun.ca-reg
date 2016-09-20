@@ -76,6 +76,18 @@
                 <label for="access">Dietary Restrictions </label>
                 <input class="form-control" type="text" name="dietary" id="dietary">
               </div>
+              <select class="form-control" name="preference" id="preference">
+                <option class="al">Arab League</option>
+                <option class="au">African Union</option>
+                <option class="disec1">DISEC 1</option>
+                <option class="disec2">DISEC 2</option>
+                <option class="fedcab">Federal Cabinet</option>
+                <option class="icij">ICIJ</option>
+                <option class="lbj">Lyndon B. Johnson's Cabinet</option>
+                <option class="nato">NATO</option>
+                <option class="unscb">UNSC Beginner</option>
+                <option class="unsca">UNSC Advanced</option>
+              </select>
 							<button class="btn btn-success" role="submit"><span class="fa fa-user-plus"></span> Add Delegate</button>
 						</form>
 					</div>
@@ -88,6 +100,7 @@
     				      <th>Sex</th>
                   <th>Dietary Restrictions</th>
     				      <th>Assigned Committee</th>
+                  <th>Assigned Position</th>
     							<th>Actions</th>
     				    </tr>
     				  </thead>
@@ -108,7 +121,8 @@
     								echo "<td class='table-cell'>" . $row["grade"] . "</td>";
     								echo "<td class='table-cell'>" . $row["sex"] . "</td>";
                     echo "<td class='table-cell'>" . $row["dietary"] . "</td>";
-    								echo "<td class='table-cell'>" . $row["assignment"] . "</td>";
+    								echo "<td class='table-cell'>" . $row["committee"] . "</td>";
+                    echo "<td class='table-cell'>" . $row["position"] . "</td>";
     								echo "<td class='table-cell'><form action='actions/drop_student.php' method='post'><button class='btn btn-danger' name='name' value='$row[name]'><span class='fa fa-remove'></span> Remove Delegate</button></form></td>";
     							echo "</tr>";
                   $count += 1;

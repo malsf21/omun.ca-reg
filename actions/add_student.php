@@ -5,7 +5,9 @@
 	$grade  = $_POST['grade']; //SANITIZE
 	$sex    = $_POST['sex']; //SANITIZE
 	$dietary    = $_POST['dietary']; //SANITIZE
-	$assignment = "unassigned";
+	$preference = $_POST['preference'] //SANITIZE
+	$committee = "unassigned";
+	$locked = "false"
 
 	// Build query
 	$query = "
@@ -16,11 +18,14 @@
 			`grade` ,
 			`sex` ,
 			`dietary` ,
-			`assignment`
+			`preference` ,
+			`committee` ,
+			`position` ,
+			`locked`
 		)
 
 		VALUES (
-			NULL ,  '$name',  '$_SESSION[school]',  '$grade',  '$sex', '$dietary', '$assignment'
+			NULL ,  '$name',  '$_SESSION[school]',  '$grade',  '$sex', '$dietary', '$preference', '$committee', '$committee', '$locked'
 		);";
 
 	// execute query

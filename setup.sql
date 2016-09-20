@@ -26,7 +26,10 @@ CREATE TABLE IF NOT EXISTS `students` (
   `grade` text NOT NULL,
   `sex` text NOT NULL,
   `dietary` text NOT NULL,
-  `assignment` text NOT NULL,
+  `preference` text,
+  `committee` text,
+  `position` text,
+  `locked` text,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
