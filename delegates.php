@@ -77,16 +77,16 @@
                 <input class="form-control" type="text" name="dietary" id="dietary">
               </div>
               <select class="form-control" name="preference" id="preference">
-                <option class="al">Arab League</option>
-                <option class="au">African Union</option>
-                <option class="disec1">DISEC 1</option>
-                <option class="disec2">DISEC 2</option>
-                <option class="fedcab">Federal Cabinet</option>
-                <option class="icij">ICIJ</option>
-                <option class="lbj">Lyndon B. Johnson's Cabinet</option>
-                <option class="nato">NATO</option>
-                <option class="unscb">UNSC Beginner</option>
-                <option class="unsca">UNSC Advanced</option>
+                <option value="al">Arab League</option>
+                <option value="au">African Union</option>
+                <option value="disec1">DISEC 1</option>
+                <option value="disec2">DISEC 2</option>
+                <option value="fedcab">Federal Cabinet</option>
+                <option value="icij">ICIJ</option>
+                <option value="lbj">Lyndon B. Johnson's Cabinet</option>
+                <option value="nato">NATO</option>
+                <option value="unscb">UNSC Beginner</option>
+                <option value="unsca">UNSC Advanced</option>
               </select>
 							<button class="btn btn-success" role="submit"><span class="fa fa-user-plus"></span> Add Delegate</button>
 						</form>
