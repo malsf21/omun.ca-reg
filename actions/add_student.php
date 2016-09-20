@@ -5,9 +5,9 @@
 	$grade  = $_POST['grade']; //SANITIZE
 	$sex    = $_POST['sex']; //SANITIZE
 	$dietary    = $_POST['dietary']; //SANITIZE
-	$preference = $_POST['preference'] //SANITIZE
+	$preference = $_POST['preference']; //SANITIZE
 	$committee = "unassigned";
-	$locked = "false"
+	$locked = "false";
 
 	// Build query
 	$query = "
