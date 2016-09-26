@@ -71,6 +71,12 @@
 						        Female
 						      </label>
 						    </div>
+                <div class="form-check">
+						    	<label class="form-check-inline">
+						        <input type="radio" class="form-check-input" name="sex" id="sexRadioF" value="Other">
+						        Other
+						      </label>
+						    </div>
 						  </fieldset>
               <div class="form-group">
                 <label for="access">Dietary Restrictions </label>
@@ -79,8 +85,7 @@
               <select class="form-control" name="preference" id="preference">
                 <option value="al">Arab League</option>
                 <option value="au">African Union</option>
-                <option value="disec1">DISEC 1</option>
-                <option value="disec2">DISEC 2</option>
+                <option value="disec">DISEC</option>
                 <option value="fedcab">Federal Cabinet</option>
                 <option value="icij">ICIJ</option>
                 <option value="lbj">Lyndon B. Johnson's Cabinet</option>
