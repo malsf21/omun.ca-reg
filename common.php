@@ -54,7 +54,7 @@
 	}
 
 	$_GET = array_map("clean", $_GET);
-	$_PUT = array_map("clean", $_PUT);
+	$_POST = array_map("clean", $_POST);
 
 	// Start a session
 	session_start();
