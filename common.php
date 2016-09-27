@@ -3,7 +3,7 @@
 	$username = "local";
 	$password = "";
 	$host = "localhost";
-	$dbname = "omun"; 
+	$dbname = "omun";
 	$options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
 
 	// Try to make a connection
@@ -47,6 +47,14 @@
 
 	// Tell browser what we're sending
 	header('Content-Type: text/html; charset=utf-8');
+
+	// Sanitize GET and POST
+	function clean(input){
+		return htmlspecialchars($input, ENT_QUOTES);
+	}
+
+	$_GET = array_map("clean", $_GET);
+	$_PUT = array_map("clean", $_PUT);
 
 	// Start a session
 	session_start();
