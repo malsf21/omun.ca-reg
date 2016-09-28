@@ -49,7 +49,7 @@
 	header('Content-Type: text/html; charset=utf-8');
 
 	// Sanitize GET and POST
-	function clean(input){
+	function clean($input){
 		return htmlspecialchars($input, ENT_QUOTES);
 	}
 
