@@ -37,5 +37,48 @@
 	// close connection
 	mysql_close($connection);
 
+	$to = "matthew.wang@ucc.on.ca";
+	//, mgriem@ucc.on.ca, omun@ucc.on.ca
+	$subject = $name." has registered from ".$_SESSION['school'];
+
+	$message = "
+	<html>
+	<head>
+	<title>".$subject."</title>
+	</head>
+	<body>
+	<p>Delegate ". $name ." has registered for OMUN, under ". $_SESSION['school']."</p>
+	<p>Here are the details they have registered under:</p>
+	<table>
+	<tr>
+	<th>Name</th>
+	<th>School</th>
+	<th>Grade</th>
+	<th>Sex</th>
+	<th>Dietary</th>
+	<th>Preference</th>
+	</tr>
+	<tr>
+	<td>".$name."</td>
+	<td>".$_SESSION["school"]."</td>
+	<td>".$grade."</td>
+	<td>".$sex."</td>
+	<td>".$dietary."</td>
+	<td>".$preference."</td>
+	</tr>
+	</table>
+	</body>
+	</html>
+	";
+
+	// Always set content-type when sending HTML email
+	$headers = "MIME-Version: 1.0" . "\r\n";
+	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+	// More headers
+	$headers .= 'From: <mail@omun.ca>' . "\r\n";
+
+	mail($to,$subject,$message,$headers);
+
 	header('Location: ../delegates.php');
 ?>
