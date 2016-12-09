@@ -37,6 +37,8 @@
 	// close connection
 	mysql_close($connection);
 
+	/*
+
 	$to = "matthew.wang@ucc.on.ca";
 	//, mgriem@ucc.on.ca, omun@ucc.on.ca
 	$subject = $name." has registered from ".$_SESSION['school'];
@@ -79,6 +81,8 @@
 	$headers .= 'From: <mail@omun.ca>' . "\r\n";
 
 	mail($to,$subject,$message,$headers);
+
+	*/
 
 	header('Location: ../delegates.php');
 ?>
