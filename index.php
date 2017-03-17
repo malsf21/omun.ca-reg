@@ -29,8 +29,8 @@
 	<body>
 		<?php include_once 'navbar.php' ?>
 		<div class="container container-main">
-			<div class="alert alert-info" role="alert">
-				<strong><span class="fa fa-info-circle"></span> Welcome</strong> to OMUN online registration! We're in phase 1 of registration: you can register your school and your students.
+			<div class="alert alert-danger" role="alert">
+				<strong><span class="fa fa-info-circle"></span> Notice!</strong> Registration is now closed for OMUN II. We hope to see you at OMUN III next year!
 			</div>
 			<div>
 				<h1>OMUN Online Registration</h1>
@@ -46,7 +46,7 @@
 						    <a class="nav-link active" data-toggle="tab" href="#login" role="tab">Login</a>
 						</ul>
 						<p>
-							Registration is for <b>schools attending OMUN</b>, not individual delegates. If you're an individual delegate looking to attend OMUN, please contact us for further details.
+							Registration is closed.
 						</p>
 					</div>
 					<div class="col-sm-9">
@@ -76,7 +76,6 @@
 		</div>
 	</body>
 	<script src="js/jquery.min.js"></script>
-
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		$("#password").change(function() {
