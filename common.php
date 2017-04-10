@@ -4,6 +4,7 @@
 	$password = "";
 	$host = "localhost";
 	$dbname = "omun";
+	$reg = False;
 	$options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
 
 	// Try to make a connection

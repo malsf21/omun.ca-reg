@@ -52,14 +52,7 @@
 					<div class="col-sm-9">
 						<div class="tab-content">
 							<div class="tab-pane" id="signup" role="tabpanel">
-								<form action="actions/signup.php" method="post">
-									<h3>Signup</h3>
-									<label>School: </label><input class="form-control" required type="text" name="school"><br>
-									<label>Email: </label><input class="form-control" required type="email" name="email"><br>
-									<label>Password: </label><input class="form-control" required type="password" name="password" id="password"><br>
-									<label>Re-enter Password: <span id="password_status"></span></label><input class="form-control" required type="password" id="confirm_password"><br>
-									<button class="btn btn-success" role="submit">Signup</button>
-								</form>
+								Signup is closed.
 							</div>
 							<div class="tab-pane active" id="login" role="tabpanel">
 								<form action="actions/signin.php" method="post">
@@ -77,23 +70,4 @@
 	</body>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-		$("#password").change(function() {
-			validatePassword();
-		});
-		$("#confirm_password").change(function() {
-			validatePassword();
-		});
-
-		function validatePassword(){
-			if($("#password").val() != $("#confirm_password").val()) {
-				$("#password_status").html("<span class='fa fa-remove'></span> Passwords don't match!");
-				$("#password_status").attr("class", "text-danger");
-			}
-			else {
-				$("#password_status").html("<span class='fa fa-check'></span> Passwords match!");
-				$("#password_status").attr("class", "text-success");
-			}
-		}
-	</script>
 </html>
