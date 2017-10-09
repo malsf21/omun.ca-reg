@@ -36,8 +36,6 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
 
     <script src="js/google-analytics.js"></script>
-
-    <link rel="canonical" href="https://omun.ca/" />
   </head>
 
 
