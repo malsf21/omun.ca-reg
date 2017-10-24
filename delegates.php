@@ -82,14 +82,15 @@
               </div>
               <select class="form-control" name="preference" id="preference">
                 <option value="al">Arab League</option>
-                <option value="au">African Union</option>
                 <option value="disec">DISEC</option>
-                <option value="fedcab">Federal Cabinet</option>
-                <option value="icij">ICIJ</option>
-                <option value="lbj">Lyndon B. Johnson's Cabinet</option>
+                <option value="eu">European Union</option>
+                <option value="g20">G20</option>
+                <option value="interpol">Interpol</option>
                 <option value="nato">NATO</option>
-                <option value="unscb">UNSC Beginner</option>
-                <option value="unsca">UNSC Advanced</option>
+                <option value="pcpc">Politburo of China</option>
+                <option value="unsc">UN Security Council</option>
+                <option value="uss">U.S. Senate</option>
+                <option value="ussr">Fall of USSR</option>
               </select>
 							<button class="btn btn-success" role="submit"><span class="fa fa-user-plus"></span> Add Delegate</button>
 						</form>
