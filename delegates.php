@@ -89,8 +89,9 @@
                 <option value="nato">NATO</option>
                 <option value="pcpc">Politburo of China</option>
                 <option value="unsc">UN Security Council</option>
-                <option value="uss">U.S. Senate</option>
+                <option value="uscan">US Canada Joint Cabinet</option>
                 <option value="ussr">Fall of USSR</option>
+                <option value="wilson">President Wilson's Cabinet</option>
               </select>
 							<button class="btn btn-success" role="submit"><span class="fa fa-user-plus"></span> Add Delegate</button>
 						</form>
